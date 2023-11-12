@@ -1,0 +1,131 @@
+/* Styles go here */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, Arial;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  text-align: center;
+  box-shadow: 3px 3px 3px #ccc;
+  background-color: lightblue;
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: dodgerblue;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 80px;
+}
+
+#search-wrapper {
+  font-size: 18px;
+}
+
+#search label {
+  font-weight: bold;
+}
+
+#city-input {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+#search-button {
+  padding: 6px;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: dodgerblue;
+  border: 1px solid dodgerblue;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+#search-button:hover {
+  background-color: deepskyblue;
+}
+
+#weather-info-container {
+  display: none;
+  flex-direction: column;
+  padding: 30px;
+  border: 1px solid #ccc;
+  width: 500px;
+  margin: 100px auto auto;
+  background-color: deepskyblue;
+  box-shadow: 2px 2px 3px #ccc;
+  color: white;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+#error-container {
+  display: none;
+  flex-direction: column;
+  padding: 30px;
+  border: 1px solid #ccc;
+  width: 500px;
+  margin: 100px auto auto;
+  background-color: deepskyblue;
+  box-shadow: 2px 2px 3px #ccc;
+  color: white;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+#error-message {
+  font-size: 14px;
+  color: red;
+}
+
+#weather-city {
+  align-self: center;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* #weather-description {
+}
+
+#weather-temperature {
+} */
+
+#load {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  width: 500px;
+  margin: 100px auto auto;
+  font-size: 20px;
+}
